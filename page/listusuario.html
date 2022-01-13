@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>USUÁRIO</title>
+	<link rel="stylesheet" href="../style/listusuario.css">
+	<script src="https://kit.fontawesome.com/4f3026e11c.js" crossorigin="anonymous">
+
+	</script>
+	<script src="../script/usuario.js">
+
+	</script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="headerDiv">
+			<img id="image" src="../images/logo.png" alt="Imagem Logo">
+      <div class="menu">
+        <div id="itemMenu">
+          <a href="../page/index.html">Inicio</a>
+          <a href="../page/estoque.html">Estoque</a>
+          <a href="../page/endereco.html">Endereço</a>
+          <a href="../page/pendencia.html">Pendência</a>
+          <a href="../page/usuario.html" id="colorRed">Usuário</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+	<main class="main">
+    <div class="buttons">
+      <button class="button" onclick="usuario()">Usuários</button>
+      <button class="button" onclick="mostrar('seuformulario')">Criar Usuário</button>
+    </div>
+    
+    <div id="onde-vai-mostrar">
+    <div class="quadrado">
+      
+    <div class="conteinerDiv">
+      <table>
+        <thead>
+          <tr id="cabecalho">
+            <td id="codigo">Codigo</td>
+            <td id="descricao">Descrição</td>
+            <td id="marca">Marca</td>
+            <td id="endereco">Endereço</td>
+            <td id="codbarra">Cod.barra</td>
+          </tr>
+        </thead>
+      
+        <tbody class="tbodyTable" id="lista"> 
+           <tr>
+              <td>85</td>
+              <td>xarope 360ml 10</td>
+              <td>Neo quimica</td>
+              <td>12.04.424.200</td>
+              <td>1234567891234</td>
+            </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,211 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: rgb(2, 0, 36);
+}
+.header{
+  align-self: center;
+  /* justify-content: center; */
+  background-color: rgb(2, 0, 36);
+}
+.headerDiv{
+  display: flex;
+  color: white;
+}
+.menu {
+  width: 100%;
+  flex-direction: row;
+  float: right
+}
+#itemMenu{
+  display: flex;
+  margin-left: 35%;
+  margin-top: 7%;
+}
+.main{
+  margin: 6%;
+  background-color: rgb(2, 0, 36);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.mainDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#image{
+  margin-left: 150px;
+  margin-top: 1%;
+  height: 80px;
+  margin-right: -20px;
+}
+.button{
+  color: rgb(0, 0, 0);
+  width: 150px;
+  height: 30px;
+  margin-left: 33px;
+  border-radius: 20px 0px 20px 0px;
+  box-shadow: 20px 20px 50px -30px rgb(190, 134, 241);
+}
+#enviar{
+  padding: 5px 10px 5px 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+a{
+  color: white;
+  padding-right: 50px;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+  text-decoration: red;
+}
+#colorRed{
+  color: red
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3%;
+}
+#onde-vai-mostrar form input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#onde-vai-mostrar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-top: 1%;
+  margin-left: 25%;
+  border-radius: 10px;
+  height: 200px;
+}
+ #seuformulario {
+  margin-left: 350px;
+}
+#nome{
+  border-radius: 10px;
+  height: 20px;
+  width: 250px;
+  margin-top: 10px;
+}
+#usuario{
+  border-radius: 10px;
+  height: 20px;
+  width: 250px;
+  margin-top: 10px;
+  
+}
+#permissao{
+  border-radius: 10px;
+  height: 20px;
+  width: 250px;
+  margin-top: 10px;
+}
+#select{
+   border-radius: 10px;
+  height: 20px;
+  width: 250px;
+  margin-top: 50px;
+}
+input[type=text], select {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit]  {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 0px 20px 0px;
+  box-shadow: 20px 20px 50px -30px rgb(190, 134, 241);
+  color: rgb(0, 0, 0);
+  padding: 14px 100px;
+  margin: 8px 0;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=submit]:hover {
+  background-color: #ffffff;
+}
+.quadrado {
+  width: 100px;
+  height:100px;
+  animation: go-back 3s;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes go-back {
+  from {
+    transform: translateX(-250rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+} 
+
+
+.conteinerDiv{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  height: 270px;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  
+}
+
+tr{
+  display: flex;
+  width: 100%;
+  border:1px solid;
+  border-radius: 10px;
+  text-align: center;
+   align-items: center;
+  justify-content: center
+}
+
+#cabecalho {
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 10px 0.5px rgb(190, 134, 241);
+  width: 100%;
+}
+td{
+  display: flex;
+  padding: 1px 40px 1px 40px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.tbodyTable{
+ display: flex;
+  flex-direction: column;
+  height:300px ;
+  width: 1100px;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow:auto;
+  background-color: rgb(2, 0, 36);
+}

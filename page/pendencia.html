@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LOGISTICA LABORSIL</title>
+	<link rel="stylesheet" href="../style/estoque.css">
+	<script src="https://kit.fontawesome.com/4f3026e11c.js" crossorigin="anonymous">
+
+	</script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="headerDiv">
+			<img id="image" src="../images/logo.png" alt="Imagem Logo">
+      <div class="menu">
+        <div id="itemMenu">
+           <a href="../page/index.html">Inicio</a>
+          <a href="../page/estoque.html" >Estoque</a>
+          <a href="../page/endereco.html">Endereço</a>
+          <a href="../page/pendencia.html" id="colorRed">Pendência</a>
+          <a href="../page/usuario.html">Usuário</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+	<main class="main">
+    <div class="maindDiv">
+      <div class="mainInput">
+        <input type="number" placeholder="Codigo" id="codigo">
+        <input type="text" placeholder="Descrição" id="descricao" >
+        <input type="text" placeholder="Marca" id="marca">
+        <input type="text" placeholder="Endereço"id="endereco" >
+        <input type="number" placeholder="Codigo de barra" id="codbarra">
+      </div>
+      <div class="mainButton">
+        <button id="buttonPrimary" onclick="Pesquisar()">Pesquisar</button>
+        <button id="buttonSecundary" onclick="LimparCampo()">Limpar</button>
+      </div>
+     
+      <div class="conteinerDiv">
+        <table>
+        <thead>
+          <tr id="cabecalho">
+            <td id="codigo">Codigo</td>
+            <td id="descricao">Descrição</td>
+            <td id="marca">Marca</td>
+            <td id="endereco">Endereço</td>
+            <td id="codbarra">Cod.barra</td>
+          </tr>
+        </thead>
+      
+        <tbody class="tbodyTable" id="lista">
+          
+           <tr>
+              <td>85</td>
+              <td>xarope 360ml 10</td>
+              <td>Neo quimica</td>
+              <td>12.04.424.200</td>
+              <td>1234567891234</td>
+            </tr>
+         
+
+        </tbody>
+          </table>
+            <div style="margin-top:20px;margin-right:150px; float:right; text-color:white;">
+              <ul class="pagination">
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a class="active" href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+      </div>
+     </div>
+	</main>
+  <script src="../script/pendencia.js"></script>
+</body>
+</html>

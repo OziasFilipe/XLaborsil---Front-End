@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página Principal</title>
+	<link rel="stylesheet" href="../style/index.css">
+	<script src="https://kit.fontawesome.com/4f3026e11c.js" crossorigin="anonymous">
+
+	</script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="headerDiv">
+			<img id="image" src="../images/logo.png" alt="Imagem Logo">
+      <div class="menu">
+        <div id="itemMenu">
+          <a href="../page/index.html" id="colorRed">Inicio</a>
+          <a href="../page/estoque.html">Estoque</a>
+          <a href="../page/endereco.html">Endereço</a>
+          <a href="../page/pendencia.html">Pendência</a>
+          <a href="../page/usuario.html">Usuário</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+	<main class="main">
+    <div class="mainDiv">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <div class="card">
+              <img src="../images/estoque.png" alt="" height="150px">
+              <p></p>
+              <p>LOGÍSTICA</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="card">
+              <!-- <img src="../images/option.png" alt="" height="150px"> -->
+              <p class="textTitleCard">ESTOQUE</p><br>
+              <p class="02">Listagem de produtos para endereçamento</p><br>
+              <button class="entrar" onclick="window.location.href = '../page/estoque.html'">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <div class="card">
+              <img src="../images/endereco.png" alt="" height="150px">
+              <p></p>
+              <p>ENDEREÇAMENTO</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="card">
+              <!-- <img src="../images/option.png" alt="" height="150px"> -->
+              <p class="textTitleCard">ENDEREÇAMENTO</p><br>
+              <p>Criar endereços no estoque</p><br>
+              <button class="entrar" onclick="window.location.href = '../page/endereco.html'">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <div class="card">
+              <img src="../images/do-utilizador.png" alt="" height="150px">
+              <p></p>
+              <p>USUÁRIOS</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="card">
+              <!-- <img src="../images/option.png" alt="" height="150px"> -->
+              <p class="textTitleCard">USUÁRIOS</p><br>
+              <p>Listagem e Inclusão de Usuários</p><br>
+              <button class="entrar" onclick="window.location.href = '../page/usuario.html'">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+	</main>
+  <script src=""></script>
+</body>
+</html>

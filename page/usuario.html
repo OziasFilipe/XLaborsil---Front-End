@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>USUÁRIO</title>
+	<link rel="stylesheet" href="../style/usuario.css">
+	<script src="https://kit.fontawesome.com/4f3026e11c.js" crossorigin="anonymous">
+
+	</script>
+	<script src="../script/usuario.js">
+
+	</script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="headerDiv">
+			<img id="image" src="../images/logo.png" alt="Imagem Logo">
+      <div class="menu">
+        <div id="itemMenu">
+          <a href="../page/index.html">Inicio</a>
+          <a href="../page/estoque.html">Estoque</a>
+          <a href="../page/endereco.html">Endereço</a>
+          <a href="../page/pendencia.html">Pendência</a>
+          <a href="../page/usuario.html" id="colorRed">Usuário</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+	<main class="main">
+    <div class="buttons">
+      <button class="button" onclick="usuario()">Usuários</button>
+      <button class="button" onclick="mostrar('seuformulario')">Criar Usuário</button>
+    </div>
+
+    <div id="onde-vai-mostrar">
+      <div class="quadrado">
+        <form action="" id="seuformulario">
+          <label for="fname">Nome</label>
+          <input type="text" id="fname" name="firstname" placeholder="nome">
+
+          <label for="lname">Usuario</label>
+          <input type="text" id="lname" name="lastname" placeholder="usuario">
+
+          <label for="country">Permissão</label>
+          <select id="country" name="country">
+            <option value="australia">Basico</option>
+            <option value="canada">Administrador</option>
+          </select>
+        
+          <input type="submit" value="Cadastrar">
+        </form>
+  </div>
+    </div>
+         
+	</main>
+</body>
+</html>

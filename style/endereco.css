@@ -1,0 +1,210 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: rgb(2, 0, 36);
+}
+.header{
+  align-self: center;
+  /* justify-content: center; */
+  background-color: rgb(2, 0, 36);
+}
+.headerDiv{
+  display: flex;
+  color: white;
+  
+}
+.menu {
+  width: 100%;
+  flex-direction: row;
+  float: right
+}
+#itemMenu{
+  display: flex;
+  margin-left: 35%;
+  margin-top: 7%;
+  // margin-left: 50%
+}
+.main{
+  margin: 3%;
+  background-color: rgb(2, 0, 36);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+#image{
+  margin-left: 150px;
+  margin-top: 1%;
+  height: 80px;
+  margin-right: -20px;
+}
+/* #image:hover{
+  margin-left: 50px;
+  margin-top: 1%;
+  height: 80px;
+  margin-right: 50px;
+} */
+.button{
+  color: rgb(190, 134, 241);
+  width: 100px;
+  flex-direction: row;
+ 
+  
+}
+a{
+  color: white;
+  padding-right: 50px;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+  text-decoration: red;
+}
+#colorRed{
+  color: red
+}
+
+input{
+  width: 200px;
+  height:34px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: transparent;
+  margin-left: 10px;
+  margin-top: 1%;
+}
+.mainInput{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 0.5; /* Firefox */
+  text-align: center;
+}
+.main{
+  display: center;
+  align-items: center;
+  justify-content: center
+}
+#buttonPrimary{
+  height: 40px;
+  width: 100px;
+  background-color:rgb(255, 255, 255);
+  color:#000000;
+  border-radius: 10px;
+  margin-top: 20px;
+  
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 0.2px 0.2px 5px 0.2px rgb(190, 134, 241);
+}
+
+#buttonSecundary{
+  height: 40px;
+  width: 100px;
+  background-color:rgb(255, 255, 255);
+  color:#000000;
+  border-radius: 10px;
+  margin-top: 20px;
+ 
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 0.5px 0.5px 10px 0.5px rgb(190, 134, 241);
+}
+
+.mainButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+.conteinerDiv{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  height: 270px;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  
+}
+
+tr{
+  display: flex;
+  width: 100%;
+  border:1px solid;
+  border-radius: 10px;
+  text-align: center;
+   align-items: center;
+  justify-content: center
+}
+
+#cabecalho {
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 10px 0.5px rgb(190, 134, 241);
+  width: 100%;
+}
+td{
+  display: flex;
+  padding: 1px 40px 1px 40px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.tbodyTable{
+ display: flex;
+ align-content: center;
+  flex-direction: column;
+  height:300px ;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow:auto;
+  background-color: rgb(2, 0, 36);
+}
+
+
+// --------  Paginação 
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: white;
+    padding: 4px 4px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 22px;
+}
+
+ul.pagination li a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 0, 36);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}

@@ -1,0 +1,339 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: rgb(2, 0, 36);
+}
+.header{
+  align-self: center;
+  /* justify-content: center; */
+  background-color: rgb(2, 0, 36);
+}
+.headerDiv{
+  display: flex;
+  color: white;
+  
+}
+.menu {
+  width: 100%;
+  flex-direction: row;
+  float: right
+}
+#itemMenu{
+  display: flex;
+  margin-left: 35%;
+  margin-top: 7%;
+  // margin-left: 50%
+}
+.main{
+  margin: 3%;
+  background-color: rgb(2, 0, 36);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+#image{
+  margin-left: 150px;
+  margin-top: 1%;
+  height: 80px;
+  margin-right: -20px;
+}
+/* #image:hover{
+  margin-left: 50px;
+  margin-top: 1%;
+  height: 80px;
+  margin-right: 50px;
+} */
+.button{
+  color: rgb(190, 134, 241);
+  width: 100px;
+  flex-direction: row;
+
+}
+a{
+  color: white;
+  padding-right: 50px;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+  text-decoration: red;
+}
+#colorRed{
+  color: red
+}
+
+input{
+  width: 200px;
+  height:34px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: transparent;
+  margin-left: 10px;
+  margin-top: 1%;
+}
+.mainInput{
+  margin-left:70px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 0.5; /* Firefox */
+  text-align: center;
+}
+.main{
+  display: center;
+  align-items: center;
+  justify-content: center
+}
+#buttonPrimary{
+  height: 40px;
+  width: 100px;
+  background-color:rgb(255, 255, 255);
+  color:#000000;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 87px;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 0.2px 0.2px 5px 0.2px rgb(190, 134, 241);
+}
+#buttonSecundary{
+  height: 40px;
+  width: 100px;
+  background-color:rgb(255, 255, 255);
+  color:#000000;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 22px;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 0.5px 0.5px 10px 0.5px rgb(190, 134, 241);
+}
+
+.conteinerDiv{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  height: 270px;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  
+}
+
+tr{
+  display: flex;
+  width: 100%;
+  border:1px solid;
+  border-radius: 10px;
+  text-align: center;
+   align-items: center;
+  justify-content: center
+}
+
+#cabecalho {
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 10px 0.5px rgb(190, 134, 241);
+  width: 100%;
+}
+td{
+  display: flex;
+  padding: 1px 40px 1px 40px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.tbodyTable{
+ display: flex;
+  flex-direction: column;
+  height:300px ;
+  width: 1100px;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow:auto;
+  background-color: rgb(2, 0, 36);
+}
+
+#CODPROD{
+  width: 80px;
+  text-align: center; 
+}
+#DESC{
+  width: 200px;
+}
+// --------  Paginação 
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: white;
+    float: left;
+    padding: 4px 4px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 22px;
+}
+
+ul.pagination li a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 0, 36);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+
+
+// POP CARD
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 20%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  
+  text-align: center;
+}
+.container2{
+  text-align: center;
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(2, 0, 36);
+  color: white;
+  margin: 0% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #c01e1e;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LOGISTICA LABORSIL</title>
+	<link rel="stylesheet" href="../style/estoque.css">
+	<script src="https://kit.fontawesome.com/4f3026e11c.js" crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	<!---- 
+    <button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
+  -->
+  <div id="id02" class="modal2">
+		<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+   
+      <div class="container2">
+        <h1>Endereço </h1>
+
+            <div>
+              <ul style="flex-direction:row; display:flex; justify-content:center;align-items:center">
+                <li style="flex-direction:row; display:flex; ">1</li>   
+                <li style="flex-direction:row; display:flex; ">19.2.4.64.5.4</li>  
+              </ul>
+            </div>
+            </div>
+  </div>
+  
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content" >
+    <div class="container">
+      <h1>Cliente </h1>
+      <p>Endereço</p>
+      
+        <div>
+          <input type ="number" placeholder="CODPROD" id="CODPROD" value="" disabled/>
+          <input type ="text" placeholder="DESCRIÇÃO" style="width:300px;" id="DESC" disabled/>
+          <input type ="text" placeholder="ENDEREÇO" id="ENDERECO" disabled/>
+          <br>
+          <input type ="text" placeholder="MARCA" style="width:320px;" id="MARCA" disabled/>
+          <input type ="number" placeholder="QTUNDCX" id="QT" disabled/>
+          <input type ="number" placeholder="CODAUXIAR" id="CODAUXILIAR" style="width:180px;" disabled/>
+          <hr>
+           <h1>Lote</h1>
+          <div>
+            <ul style="flex-direction:row; display:flex; justify-content:center;align-items:center">
+                <li style="flex-direction:row; display:flex; ">Lote</li>
+                <li style="flex-direction:row; display:flex; padding-left:25px;">Validade</li>
+                <li style="flex-direction:row; display:flex; padding-left:25px;">Quantidade</li>
+                <li style="flex-direction:row; display:flex; padding-left:25px;">COD</li>
+                <li style="flex-direction:row; display:flex; padding-left:25px;">Cod Auxialiar</li>
+            </ul>
+          </div>
+          <div style=" overflow:auto; height:300px; border:1px 0px 1px 0px solid white; border-radius:10px;" id="HederList"></div>
+          <hr>
+          <input type ="text" placeholder="COD.PRODUT"  style="width:10%;" id="CODUSUARIO" disabled/>
+          <input type ="text" placeholder="ÚSUARIO" style="width:80%;" id="USUARIO" disabled/>
+         
+          <div class="clearfix">
+            <button class="cancelbtn" style="background:green;color:white; border-radius:10px;margin-right:10px">GRAVAR</button>
+            <button class="cancelbtn" style="background:red;color:white; border-radius:10px;margin-right:10px">DUPLICAR LOTE</button>
+            <button class="deletebtn" onclick="document.getElementById('id01').style.display='none'" style="background:white;color:black; border-radius:10px;margin-right:10px">CANCELAR</button>
+          </div>
+        </div>
+    </div>
+  </form>
+</div>
+
+  <header class="header">
+    <div class="headerDiv">
+        <img id="image" src="../images/logo.png" alt="Imagem Logo">
+      <div class="menu">
+        <div id="itemMenu">
+           <a href="../page/index.html">Inicio</a>
+          <a href="../page/estoque.html" id="colorRed">Estoque</a>
+          <a href="../page/endereco.html">Endereço</a>
+          <a href="../page/pendencia.html">Pendência</a>
+          <a href="../page/usuario.html">Usuário</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+	<main class="main">
+    <div class="maindDiv">
+      <div class="mainInput">
+        <input type="number" placeholder="Codigo" id="codigo">
+        <input type="text" placeholder="Descrição" id="descricao">
+        <input type="text" placeholder="Marca" id="marca">
+        <input type="text" placeholder="Endereço"id="endereco" >
+        <input type="number" placeholder="Codigo de barra" id="codbarra">
+      </div>
+      <div class="mainButton">
+        <button id="buttonPrimary" onclick="Pesquisar()">Pesquisar</button>
+        <button id="buttonSecundary" onclick="LimparCampo()">Limpar</button>
+      </div>
+
+      <div class="conteinerDiv">
+        <table>
+          <thead>
+            <tr id="cabecalho">
+              <td id="codigo">Codigo</td>
+              <td id="descricao">Descrição</td>
+              <td id="marca">Marca</td>
+              <td id="endereco">Endereço</td>
+              <td id="codbarra">Cod.barra</td>
+            </tr>
+          </thead>
+
+          <tbody class="tbodyTable" id="lista"> 
+            <tr onclick="">
+                <td><h1 id="carregando">Carregando...</h1></td>
+              </tr>
+          </tbody>
+          </table>
+      
+      </div>
+     </div>
+	</main>
+  <script src="../script/estoque.js"></script>
+</body>
+</html>

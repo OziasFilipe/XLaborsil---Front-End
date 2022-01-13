@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./stylelogin.css" />
+	<title>Tela de Login</title>
+</head>
+
+<body>
+	<main>
+		<div class="login">
+			<div class="login-header">
+				<img
+            src="./images/logo.png"
+            class="logo"
+            width="240"
+            height="150"
+            alt=""
+          />
+          <h1>Login</h1>
+        </div>
+        <form class="login-form" onsubmit="return false">
+          <input type="text" name="" id="usuario" placeholder="Usuário" />
+          <input type="password" name="" id="senha" placeholder="Senha" />
+          <input type="submit" name="" value="Login" onclick="Login()" />
+          <a href="#">Esqueceu sua senha</a>
+          <a href="#">Ainda não possui uma conta?</a>
+        </form>
+      </div>
+    </main>
+    <script src="../script/index.js"></script>
+  </body>
+</html>
